@@ -10,6 +10,11 @@ The utility is literally **31 lines** long so you can just copy the code you nee
 You can write data as if you are just interacting with PersistentDataContainer.
 
 ```kotlin
+import dev.devoirr.tkl.Blocks.getPersistentData
+import dev.devoirr.tkl.Blocks.setPersistentData
+import org.bukkit.NamespacedKey
+import org.bukkit.block.Block
+
 val key = NamespacedKey.minecraft("current_clicks")
 
 fun addAndReturnClicks(block: Block): Int {
