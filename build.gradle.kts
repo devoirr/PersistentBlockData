@@ -12,7 +12,6 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:2.2.20")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
     compileOnly("org.purpurmc.purpur", "purpur-api", "1.21.3-R0.1-SNAPSHOT")
 }
 
