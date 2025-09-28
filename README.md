@@ -16,15 +16,17 @@ import org.bukkit.NamespacedKey
 import org.bukkit.block.Block
 import org.bukkit.persistence.PersistentDataType
 
-val key = NamespacedKey.minecraft("current_clicks")
-
-fun addAndReturnClicks(block: Block): Int {
-    val currentClicks = block.getPersistentData(key, PersistentDataType.INTEGER) as? Int ?: 0
-    val updatedClicks = currentClicks + 1
-
-    block.setPersistentData(key, PersistentDataType.INTEGER, updatedClicks)
-
-    return updatedClicks
+class SomeClass {
+    val key = NamespacedKey.minecraft("current_clicks")
+    
+    fun addAndReturnClicks(block: Block): Int {
+        val currentClicks = block.getPersistentData(key, PersistentDataType.INTEGER) as? Int ?: 0
+        val updatedClicks = currentClicks + 1
+    
+        block.setPersistentData(key, PersistentDataType.INTEGER, updatedClicks)
+    
+        return updatedClicks
+    }
 }
 ```
 
