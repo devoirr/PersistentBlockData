@@ -31,4 +31,6 @@ class SomeClass {
 ```
 
 It's that simple.
-You need to take into account that the NamespacedKey has limited length (32768 symbols), and the lib adds blocks coordinates to the initial provided key, so don't use ridiculously long keys, otherwise it will break.
+
+# Warning
+You need to take into account that the NamespacedKey has limited length **(32768 symbols)**, and the lib adds blocks coordinates to the initial provided key, so don't use ridiculously long keys, otherwise it will break.
